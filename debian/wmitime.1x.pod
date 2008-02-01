@@ -1,0 +1,73 @@
+#  This is manual page in Perl POD format. Read more at
+#  http://perldoc.perl.org/perlpod.html or run command:
+#
+#     perldoc perlpod | less
+#
+#  To check the syntax:
+#
+#     podchecker *.pod
+#
+#  Create manual page with command:
+#
+#    pod2man PAGE.N.pod > PAGE.N
+
+=pod
+
+=head1 NAME
+
+wmitime - Window Maker dock app displaying date, clock and internet time
+
+=head1 SYNOPSIS
+
+  wmitime [options]
+
+=head1 DESCRIPTION
+
+WMitime is yet another clock dock app, which shows standard time,
+date, as well as the new internet time <http://www.swatch.com/>.
+
+=head1 OPTIONS
+
+=over 4
+
+=item B<-12>
+
+12-hour mode
+
+=item B<-display <display name>>
+
+Specify X display
+
+=item B< -geometry +XPOS+YPOS>
+
+Initial window position.
+
+=item B<-h>
+
+Print available options.
+
+=item B<-v>
+
+Print the version number.
+
+=back
+
+=head1 ENVIRONMENT
+
+None.
+
+=head1 FILES
+
+None.
+
+=head1 SEE ALSO
+
+C<wmtime(1)>
+
+=head1 AUTHORS
+
+This manual page was written by Lenart Janos <ocsi@debian.org>, for
+the Debian GNU system (but may be used by others). Updated by Jari
+Aalto <jari.aalto@cante.net>.
+
+=cut

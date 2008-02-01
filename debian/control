@@ -1,0 +1,14 @@
+Source: wmitime
+Section: x11
+Priority: optional
+Maintainer: Jari Aalto <jari.aalto@cante.net>
+Standards-Version: 3.7.2
+Build-Depends: debhelper (>= 5), dpatch, libx11-dev, libxext-dev, libxpm-dev
+
+Package: wmitime
+Architecture: any
+Depends: ${shlibs:Depends}
+Suggests: wmaker
+Description: yet another clock dock app for Window Maker
+ WMitime is yet another clock dock app, which shows standard time,
+ date, as well as the new internet time <http://www.swatch.com/>.
