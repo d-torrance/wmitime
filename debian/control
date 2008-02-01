@@ -9,6 +9,6 @@ Package: wmitime
 Architecture: any
 Depends: ${shlibs:Depends}
 Suggests: wmaker
-Description: yet another clock dock app for Window Maker
- WMitime is yet another clock dock app, which shows standard time,
+Description: clock dock app showing time and internet time
+ WMitime is clock dock app, which shows standard time,
  date, as well as the new internet time <http://www.swatch.com/>.
