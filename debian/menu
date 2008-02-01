@@ -1,2 +1,2 @@
-?package(wmitime):needs="X11" section="Apps/Tools"\
+?package(wmitime):needs="X11" section="Applications/Network/Communication"\
   title="wmITime" command="/usr/bin/wmitime" hints="Clocks"
