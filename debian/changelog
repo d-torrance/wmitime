@@ -1,6 +1,6 @@
 wmitime (0.3-7) unstable; urgency=low
 
-  * New maintainer. (Closes #349245).
+  * New maintainer. (Closes: #349245).
   * debian/copyright:
     - Added note that upstrean URL is dead.
     - Updated Debian packaging copyrights to include all packagers.
@@ -8,15 +8,17 @@ wmitime (0.3-7) unstable; urgency=low
     - Removed obsolete Emacs variables from the end.
   * debian/control:
     - (Description): Updated
-    - (Standards-Version): updated to 3.7.2
+    - (Standards-Version): updated to 3.7.3
     - (Build-Depends): Added dpatch
+  * debian/menu:
+    - Correct section to Applications/Network/Communication
   * debian/rules:
-    - Updated. Newly generated with dh_make.
-    - Added rule to convert *.pod pages to *.1x
+    - Completely newly generated with dh_make.
+    - Add rule to convert *.pod pages to *.1xx
   * debian/wmitime.1x.pod:
     - New file. Use for manual page creation.
   * debian/wmitime.1x.man:
-    - Original page, no more used as base format.
+    - New file. The original manual page (saved for historical reference)
   * wmitime/Makefile
     - (.c.o): Changed hard coded 'cc' to $(CC). Eliminated
       unnecessary -D$(LANG).
