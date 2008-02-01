@@ -37,14 +37,14 @@ configure-stamp:
 
 	touch configure-stamp
 
-build: man build-stamp patch
+build: patch build-stamp
 
 build-stamp: configure-stamp
 	dh_testdir
 
 	# Add here commands to compile the package.
-	$(MAKE) -C wmitime FLAGS='$(FLAGS)' LANG=C
-	#docbook-to-man debian/wmitime.sgml > wmitime.1
+	$(MAKE) -C wmitime FLAGS='$(FLAGS)'
+	#docbook-to-man debian/wmitime.sgml > wmitime.1a
 
 	touch $@
 
