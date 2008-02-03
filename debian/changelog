@@ -1,30 +1,31 @@
 wmitime (0.3-7) unstable; urgency=low
 
   * New maintainer. (Closes: #349245).
-  * debian/copyright:
-    - Added note that upstrean URL is dead.
-    - Updated Debian packaging copyrights to include all packagers.
   * debian/changelog:
-    - Removed obsolete Emacs variables from the end.
+    - Remove obsolete Emacs variables from the end.
+  * debian/compat:
+    - bump version to 5
   * debian/control:
-    - (Description): Updated
+    - (Description): Remove references to Window maker. Utility works
+      with any WM.
     - (Standards-Version): updated to 3.7.3
-    - (Build-Depends): Added dpatch
+    - (Build-Depends): Add dpatch
+  * debian/copyright:
+    - Add note that upstrean URL is dead.
+    - Update Debian packaging copyrights to include all packagers.
   * debian/menu:
     - Correct section to Applications/Network/Communication
+  * debian/patches/10_hungarian-date.dpatch:
+    - Removed old hungarian diff and converted it into dpatch format
+  * debian/patches/20_makefile-CC.dpatch:
+    - Change hard coded 'cc' to $(CC). Eliminate unnecessary -D$(LANG).
   * debian/rules:
-    - Completely newly generated with dh_make.
-    - Add rule to convert *.pod pages to *.1xx
+    - Removed and newly generated with dh_make.
+    - Add rule to convert *.pod pages to *.1x
   * debian/wmitime.1x.pod:
     - New file. Use for manual page creation.
   * debian/wmitime.1x.man:
     - New file. The original manual page (saved for historical reference)
-  * wmitime/Makefile
-    - (.c.o): Changed hard coded 'cc' to $(CC). Eliminated
-      unnecessary -D$(LANG).
-    - (wmitime): Eliminated unnecessary -D$(LANG).
-  * wmitime/wmitime.[ch]
-    - Removed old hungarian diff and converted it into dpatch format
 
  -- Jari Aalto <jari.aalto@cante.net>  Mon,  6 Feb 2006 16:56:06 +0200
 
