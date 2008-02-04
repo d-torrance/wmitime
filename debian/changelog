@@ -1,5 +1,6 @@
 wmitime (0.3-7) unstable; urgency=low
 
+  [ Jari Aalto ]
   * New maintainer. (Closes: #349245).
   * debian/changelog:
     - Remove obsolete Emacs variables from the end.
@@ -27,7 +28,15 @@ wmitime (0.3-7) unstable; urgency=low
   * debian/wmitime.1x.man:
     - New file. The original manual page (saved for historical reference)
 
- -- Jari Aalto <jari.aalto@cante.net>  Mon,  6 Feb 2006 16:56:06 +0200
+  [ Ricardo Mones ]
+  * debian/control, debian/debian-vars.mk
+    - Fixed typos
+  * debian/copyright
+    - Fixed packaging copyright years, LGPL license filename, typo
+  * debian/rules
+    - Removed template comments, fixed spaces into tab 
+
+ -- Ricardo Mones <mones@debian.org>  Mon, 04 Feb 2008 00:52:37 +0100
 
 wmitime (0.3-6) unstable; urgency=low
 
