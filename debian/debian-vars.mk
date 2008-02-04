@@ -1,4 +1,4 @@
-# Comman variables
+# Common variables
 
 PKGDIR	   	= $(CURDIR)/debian/$(PACKAGE)
 SHAREDIR        = $(PKGDIR)/usr/share/$(PACKAGE)
