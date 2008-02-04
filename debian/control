@@ -1,5 +1,5 @@
 Source: wmitime
-zSection: x11
+Section: x11
 Priority: optional
 Maintainer: Jari Aalto <jari.aalto@cante.net>
 Standards-Version: 3.7.3
