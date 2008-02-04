@@ -24,9 +24,7 @@ wmitime (0.3-7) unstable; urgency=low
     - Remove and newly generated with dh_make.
     - Add rule to convert *.pod pages to *.1x
   * debian/wmitime.1x.pod:
-    - New file. Use for manual page creation.
-  * debian/wmitime.1x.man:
-    - New file. The original manual page (saved for historical reference)
+    - New file. The old manual page was converted to POD format.
 
   [ Ricardo Mones ]
   * debian/control, debian/debian-vars.mk
