@@ -5,11 +5,11 @@ wmitime (0.3-7) unstable; urgency=low
   * debian/changelog:
     - Remove obsolete Emacs variables from the end.
   * debian/compat:
-    - bump version to 5
+    - Bump version to 5
   * debian/control:
     - (Description): Remove references to Window maker. Utility works
       with any WM.
-    - (Standards-Version): updated to 3.7.3
+    - (Standards-Version): Update to 3.7.3
     - (Build-Depends): Add dpatch
   * debian/copyright:
     - Add note that upstrean URL is dead.
@@ -17,11 +17,11 @@ wmitime (0.3-7) unstable; urgency=low
   * debian/menu:
     - Correct section to Applications/Network/Communication
   * debian/patches/10_hungarian-date.dpatch:
-    - Removed old hungarian diff and converted it into dpatch format
+    - Remove old hungarian diff and converted it into dpatch format
   * debian/patches/20_makefile-CC.dpatch:
     - Change hard coded 'cc' to $(CC). Eliminate unnecessary -D$(LANG).
   * debian/rules:
-    - Removed and newly generated with dh_make.
+    - Remove and newly generated with dh_make.
     - Add rule to convert *.pod pages to *.1x
   * debian/wmitime.1x.pod:
     - New file. Use for manual page creation.
@@ -30,13 +30,13 @@ wmitime (0.3-7) unstable; urgency=low
 
   [ Ricardo Mones ]
   * debian/control, debian/debian-vars.mk
-    - Fixed typos
+    - Fix typos
   * debian/copyright
-    - Fixed packaging copyright years, LGPL license filename, typo
+    - Fix packaging copyright years, LGPL license filename, typo
   * debian/rules
-    - Removed template comments, fixed spaces into tab 
+    - (man): Fix rule by changing spaces into tabs
 
- -- Ricardo Mones <mones@debian.org>  Mon, 04 Feb 2008 00:52:37 +0100
+ -- Jari Aalto <jari.aalto@cante.net>  Mon, 04 Feb 2008 17:18:39 +0000
 
 wmitime (0.3-6) unstable; urgency=low
 
