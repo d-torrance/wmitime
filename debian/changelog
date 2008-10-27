@@ -1,6 +1,9 @@
 wmitime (0.3-8) unstable; urgency=low
 
+  * debian/compat:
+    - Change from 5 to 7.x
   * debian/control:
+    - (Build-Depends): debhelper >= 7.
     - (Homepage): New field.
     - (Standards-Version): Update to 3.8.0.
   * debian/copyright:
@@ -15,7 +18,7 @@ wmitime (0.3-8) unstable; urgency=low
   * debian/wmitime.dektop:
     - New file.
 
- -- Jari Aalto <jari.aalto@cante.net>  Mon, 27 Oct 2008 09:02:56 +0300
+ -- Jari Aalto <jari.aalto@cante.net>  Mon, 27 Oct 2008 18:38:50 +0300
 
 wmitime (0.3-7) unstable; urgency=low
 
