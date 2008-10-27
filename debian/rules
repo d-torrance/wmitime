@@ -30,7 +30,7 @@ build-stamp: configure-stamp
 	dh_testdir
 
 	# Add here commands to compile the package.
-	$(MAKE) -C wmitime FLAGS='$(FLAGS)'
+	$(MAKE) $(MAKE_FLAGS) -C wmitime FLAGS='$(FLAGS)'
 
 	touch $@
 
