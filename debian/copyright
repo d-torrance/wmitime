@@ -1,9 +1,8 @@
 This package was debianized by Takuo KITAME <kitame@northeye.org> on
-Sun, 31 Oct 1999 06:15:04 +0900.
-Redebianized by Lenart Janos <ocsi@debian.org>.
+1999-10-31 06:15:04+09 Sun.
 
 It was downloaded from http://www.neotokyo.org/illusion/
-which 2006-02-14 does not seem to exists any more.
+which 2006-02-14 no longer exists.
 
 Upstream Author:
 
@@ -11,7 +10,7 @@ Upstream Author:
 
 Copyright:
 
-  1999 Dave Clark
+  Copyright (C) 1999 Dave Clark
 
 License:
 
@@ -36,4 +35,6 @@ The Debian packaging is
   Copyright (C) 2001       Matej Vela <vela@debian.org>
   Copyright (C) 1999-2000  Takuo KITAME <kitame@northeye.org>
 
-and is licensed under the GPL.
+and is licensed under the GPL. On Debian systems, the complete text of
+the GNU General Public License can be found in
+`/usr/share/common-licenses/GPL'.
