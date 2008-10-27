@@ -10,16 +10,19 @@ wmitime (0.3-8) unstable; urgency=low
   * debian/copyright:
     - Update to use ISO dates.
     - Minor layout fixes: add word "Copyright (C)..." etc.
+    - Adjust Dave Clark's copyright years according to original README.
   * debian/rules:
     - (build-stamp): Add MAKE_FLAGS.
     - (binary-arch): Add dh_desktop.
-    - (install): Install desktop file.
+    - (install): Install *.desktop file. Do not install almost empty
+      BUGS file. Do not install README, which has nothing additional
+      information to manual page.
   * debian/watch:
     - New file.
   * debian/wmitime.dektop:
     - New file.
 
- -- Jari Aalto <jari.aalto@cante.net>  Mon, 27 Oct 2008 19:10:59 +0300
+ -- Jari Aalto <jari.aalto@cante.net>  Mon, 27 Oct 2008 19:16:59 +0300
 
 wmitime (0.3-7) unstable; urgency=low
 
