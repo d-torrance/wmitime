@@ -1,3 +1,21 @@
+wmitime (0.3-8) unstable; urgency=low
+
+  * debian/control:
+    - (Homepage): New field.
+  * debian/copyright:
+    - Update to use ISO dates.
+    - Minor layout fixes: add word "Copyright (C)..." etc.
+  * debian/rules:
+    - (build-stamp): Add MAKE_FLAGS.
+    - (binary-arch): Add dh_desktop.
+    - (install): Install desktop file.
+  * debian/watch:
+    - New file.
+  * debian/wmitime.dektop:
+    - New file.
+
+ -- Jari Aalto <jari.aalto@cante.net>  Mon, 27 Oct 2008 09:00:40 +0300
+
 wmitime (0.3-7) unstable; urgency=low
 
   [ Jari Aalto ]
