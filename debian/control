@@ -14,4 +14,4 @@ Depends: ${shlibs:Depends}
 Suggests: wmaker
 Description: clock dock app showing time and internet time
  WMitime is clock dock app, which shows standard time,
- date, as well as Internet time <http://www.swatch.com/>.
+ date, as well as the Internet time <http://www.swatch.com/>.
