@@ -101,5 +101,4 @@ define config-patch
 	$(config-patch-guess)
 endef
 
-
 # End of of Makefile part
