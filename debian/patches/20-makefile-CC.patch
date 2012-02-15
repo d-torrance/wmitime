@@ -2,21 +2,19 @@ From: Jari Aalto <jari.aalto@cante.net>
 Subject: Use CC variable
 
  wmitime/Makefile |    6 +++---
- 1 files changed, 3 insertions(+), 3 deletions(-)
+ 1 file changed, 3 insertions(+), 3 deletions(-)
 
-diff --git a/wmitime/Makefile b/wmitime/Makefile
-index 1b1185d..14308a5 100644
 --- a/wmitime/Makefile
 +++ b/wmitime/Makefile
 @@ -2,17 +2,17 @@
  LIBDIR = -L/usr/X11R6/lib
- LIBS	= -lXpm -lXext -lX11 -lm
+ LIBS   = -lXpm -lXext -lX11 -lm
  FLAGS = -O2
 +CC	= gcc
  OBJS =	wmitime.o \
-		../wmgeneral/wmgeneral.o \
-		../wmgeneral/misc.o \
-		../wmgeneral/list.o
+ 		../wmgeneral/wmgeneral.o \
+ 		../wmgeneral/misc.o \
+ 		../wmgeneral/list.o
  
 -
  .c.o:
