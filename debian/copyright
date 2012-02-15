@@ -10,12 +10,13 @@ X-Comment:
 Files: *
 Copyright:
   1997-1998 Dave Clark <clarkd@skynet.ca>
-License: Custom
+X-Comment:
   /*
    wmitime.c -- internet time clock
    by Dave Clark (clarkd@skynet.ca) (http://www.neotokyo.org/illusion)
    This software is licensed through the GNU General Public Lisence.
   */
+License: GPL-2+
 
 Files: debian/*
 Copyright:
