@@ -1,7 +1,8 @@
 #!/usr/bin/make -f
 
-PACKAGE = wmitime
-BIN	= $(PACKAGE)/$(PACKAGE)
+PACKAGE	  = wmitime
+BIN	  = $(PACKAGE)/$(PACKAGE)
+MAKE_FLAGS = -C wmitime
 
 include /usr/share/dpkg/buildflags.mk
 CFLAGS	+= -Wall -pedantic
@@ -13,12 +14,11 @@ include debian/debian-vars.mk
 man:
 	$(MAKE) -C debian -f pod2man.mk PACKAGE=$(PACKAGE) makeman
 
-override_sh_auto_build:
-	$(MAKE) -C wmitime FLAGS="$(CFLAGS) $(LDFLAGS)"
+override_dh_auto_build:
+	$(MAKE) $(MAKE_FLAGS) FLAGS="$(CFLAGS) $(LDFLAGS)"
 
 override_dh_auto_clean:
-	# Commands to clean up after the build process.
-	[ ! -f wmitime/Makefile ] || $(MAKE) -C wmitime clean
+	$(MAKE) $(MAKE_FLAGS) clean
 
 override_sh_auto_install:
 	install -D -m 755  $(BIN) $(BINDIR)/$(PACKAGE)
