@@ -1,20 +1,48 @@
-wmitime (0.3-9) unstable; urgency=low
+wmitime (0.3-10) unstable; urgency=low
 
   * debian/compat
     - Update to 9
   * debian/control
     - (Build-Depends): update to debhelper 9, dpkg-dev 1.16.1. Remove
       dpatch.
+    - (Standards-Version): Update to 3.9.2.
   * debian/copyright
     - Update to DEP5.
   * debian/rules
-    - Update to dh(1).
+    - Remove unused targets.
     - Use hardened CFLAGS.
       http://wiki.debian.org/ReleaseGoals/SecurityHardeningBuildFlags
-  * debian/source/format
-    - New. Format 3.0 quilt
 
- -- Jari Aalto <jari.aalto@cante.net>  Wed, 15 Feb 2012 07:37:36 -0500
+ -- Jari Aalto <jari.aalto@cante.net>  Wed, 15 Feb 2012 08:04:22 -0500
+
+wmitime (0.3-9) unstable; urgency=low
+
+  * Move to format: 3.0 (quilt).
+  * debian/clean
+    - Move content from debian/rules for dh(1).
+  * debian/control
+    - (Build-Depends): Remove dpatch.
+    - (Description): Extend long part (lintian).
+    - (Depends): add ${misc:Depends} for debhelper.
+    - (Standards-Version): Update to 3.8.3.
+  * debian/copyright
+    - Layout upgrade. Add FSF preamble.
+  * debian/debian-compile.mk
+    - New file.
+  * debian/patches
+    - Convert to quilt.
+    - (10): Adjust link flags and add trimmed down GTKLIBS.
+    - (30): New patch to fix "cast to pointer from integer of
+      different size" warnings.
+  * debian/README.source
+    - Delete, obsoleted by format 3.0.
+  * debian/rules
+    - (MANSECT): Move from 1x to standard 1.
+    - Remove rules obsoleted by dh(1).
+  * debian/wmitime.{install,manpages}
+    - Move content from debian/rules for dh(1).
+
+ -- Jari Aalto <jari.aalto@cante.net>  Thu, 17 Dec 2009 14:51:50 +0200
 
 wmitime (0.3-8) unstable; urgency=low
 
