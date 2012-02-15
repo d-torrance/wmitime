@@ -6,12 +6,13 @@ Build-Depends: debhelper (>= 9), dpkg-dev (>= 1.16.1), libx11-dev, libxext-dev, 
 Vcs-Git: http://git.debian.org/collab-maint/wmitime.git
 Standards-Version: 3.9.2
 Vcs-Browser: http://git.debian.org/?p=collab-maint/wmitime.git;a=summary
-Homepage: http://dockapps.org/file.php/id/22
+Homepage: None
 
 Package: wmitime
 Architecture: any
 Depends: ${shlibs:Depends}
 Suggests: wmaker
 Description: clock dock app showing time and internet time
- WMitime is clock dock app, which shows standard time,
- date, as well as the Internet time <http://www.swatch.com/>.
+ WMitime is yet another clock dockapp (and quite overglorified at that)
+ it shows standard time, date, as well as the new internet time.  For
+ more info on internet time, see <http://www.swatch.com/>.
