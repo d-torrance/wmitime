@@ -10,9 +10,10 @@ Homepage: None
 
 Package: wmitime
 Architecture: any
-Depends: ${shlibs:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Suggests: wmaker
 Description: clock dock app showing time and internet time
- WMitime is yet another clock dockapp (and quite overglorified at that)
- it shows standard time, date, as well as the new internet time.  For
- more info on internet time, see <http://www.swatch.com/>.
+ WMitime is clock dock app, which shows standard time,
+ date. The unique feature is that it can also show Internet time
+ with notation @TIME. See <http://www.swatch.com/> for more about
+ Internet time.
