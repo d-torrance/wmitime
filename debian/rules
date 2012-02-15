@@ -1,99 +1,30 @@
 #!/usr/bin/make -f
-# -*- makefile -*-
-
-# Uncomment this to turn on verbose mode.
-#export DH_VERBOSE=1
 
 PACKAGE = wmitime
 BIN	= $(PACKAGE)/$(PACKAGE)
-MANSECT = 1x
-MANSRC  = debian
-MK_MAN  = pod2man.mk
+
+include /usr/share/dpkg/buildflags.mk
+CFLAGS	+= -Wall -pedantic
+LDFLAGS += -Wl,--as-needed
+export CFLAGS LDFLAGS
 
 include debian/debian-vars.mk
-include /usr/share/dpatch/dpatch.make
 
 man:
-	$(MAKE) -C $(MANSRC) -f $(MK_MAN) PACKAGE=$(PACKAGE) \
-	MANSECT=$(MANSECT) makeman
+	$(MAKE) -C debian -f pod2man.mk PACKAGE=$(PACKAGE) makeman
 
-configure: configure-stamp
-configure-stamp:
-	dh_testdir
+override_sh_auto_build:
+	$(MAKE) -C wmitime FLAGS="$(CFLAGS) $(LDFLAGS)"
 
-	# Commands to configure the package.
-	touch configure-stamp
-
-build: patch build-stamp
-
-build-stamp: configure-stamp
-	dh_testdir
-
-	# Add here commands to compile the package.
-	$(MAKE) $(MAKE_FLAGS) -C wmitime FLAGS='$(FLAGS)'
-
-	touch $@
-
-clean: unpatch
-	dh_testdir
-	dh_testroot
-	rm -f build-stamp configure-stamp
-
+override_dh_auto_clean
 	# Commands to clean up after the build process.
 	[ ! -f wmitime/Makefile ] || $(MAKE) -C wmitime clean
 
-	dh_clean
-
-install: build
-	dh_testdir
-	dh_testroot
-	dh_clean -k
-	dh_installdirs
-
-	# Commands to install the package into debian/wmitime.
-	# $(MAKE) DESTDIR=$(PKGDIR) install
-
+override_sh_auto_install:
 	install -D -m 755  $(BIN) $(BINDIR)/$(PACKAGE)
 	$(INSTALL_DIR) $(DESKTOPDIR)
 	$(INSTALL_DATA) debian/*.desktop $(DESKTOPDIR)
 
-# Build architecture-independent files here.
-binary-indep: build install
-	# We have nothing to do by default.
-
-# Build architecture-dependent files here.
-binary-arch: build install
-	dh_testdir
-	dh_testroot
-	dh_installchangelogs CHANGES
-	dh_installdocs
-	dh_installexamples
-#	dh_install
-#	dh_installmenu
-#	dh_installdebconf
-#	dh_installlogrotate
-#	dh_installemacsen
-#	dh_installpam
-#	dh_installmime
-#	dh_python
-#	dh_installinit
-#	dh_installcron
-#	dh_installinfo
-	dh_installmenu
-	dh_installman debian/*.$(MANSECT)
-	dh_link
-	dh_strip
-	dh_desktop
-	dh_compress
-	dh_fixperms
-#	dh_perl
-#	dh_makeshlibs
-	dh_installdeb
-	dh_shlibdeps
-	dh_gencontrol
-	dh_md5sums
-	dh_builddeb
-
-binary: binary-indep binary-arch
-.PHONY: build clean binary-indep binary-arch binary install configure
 .PHONY: man
+
+# End of file
