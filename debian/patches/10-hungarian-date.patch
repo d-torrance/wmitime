@@ -1,10 +1,5 @@
-#! /bin/sh /usr/share/dpatch/dpatch-run
-## debian/quilt/hungarian.h--hungarian-date.dpatch by Jari Aalto <jari.aalto@cante.net>
-##
-## All lines beginning with `## DP:' are a description of the patch.
-## DP: "Add hungarian support"
-
-@DPATCH@
+From: Jari Aalto <jari.aalto@cante.net>
+Subject: Add hungarian support
 
 Index: wmitime/wmitime/hungarian.h
 ===================================================================
