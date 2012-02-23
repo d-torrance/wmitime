@@ -16,12 +16,14 @@ wmitime (0.3-10) unstable; urgency=low
     - New file.
   * debian/*.desktop
     - Rename to plain desktop.
+  * debian/manpages
+    - New file.
   * debian/rules
     - Remove unused targets.
     - Use hardened CFLAGS.
       http://wiki.debian.org/ReleaseGoals/SecurityHardeningBuildFlags
 
- -- Jari Aalto <jari.aalto@cante.net>  Thu, 23 Feb 2012 10:50:45 -0500
+ -- Jari Aalto <jari.aalto@cante.net>  Thu, 23 Feb 2012 10:52:27 -0500
 
 wmitime (0.3-9) unstable; urgency=low
 
