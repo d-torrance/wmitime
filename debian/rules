@@ -20,7 +20,7 @@ override_dh_auto_build: man
 override_dh_auto_clean:
 	$(MAKE) $(MAKE_FLAGS) clean
 
-override_sh_auto_install:
+override_dh_auto_install:
 	install -D -m 755  $(BIN) $(BINDIR)/$(PACKAGE)
 	$(INSTALL_DIR) $(DESKTOPDIR)
 	$(INSTALL_DATA) debian/*.desktop $(DESKTOPDIR)
