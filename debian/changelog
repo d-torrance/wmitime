@@ -8,8 +8,12 @@ wmitime (0.3-10) unstable; urgency=low
     - (Standards-Version): Update to 3.9.2.
   * debian/copyright
     - Update to DEP5.
-  * debian/*1x*
-    - Rename files. Put manual into plain *.1 section.
+  * debian/*.1
+    - Delete generated file.
+  * debian/*.1x.pod
+    - Rename file. Put manual into plain *.1 section.
+  * debian/clean
+    - New file.
   * debian/*.desktop
     - Rename to plain desktop.
   * debian/rules
@@ -17,7 +21,7 @@ wmitime (0.3-10) unstable; urgency=low
     - Use hardened CFLAGS.
       http://wiki.debian.org/ReleaseGoals/SecurityHardeningBuildFlags
 
- -- Jari Aalto <jari.aalto@cante.net>  Thu, 23 Feb 2012 10:47:10 -0500
+ -- Jari Aalto <jari.aalto@cante.net>  Thu, 23 Feb 2012 10:50:45 -0500
 
 wmitime (0.3-9) unstable; urgency=low
 
