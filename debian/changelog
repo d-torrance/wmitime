@@ -8,12 +8,16 @@ wmitime (0.3-10) unstable; urgency=low
     - (Standards-Version): Update to 3.9.2.
   * debian/copyright
     - Update to DEP5.
+  * debian/*1x*
+    - Rename files. Put manual into plain *.1 section.
+  * debian/*.desktop
+    - Rename to plain desktop.
   * debian/rules
     - Remove unused targets.
     - Use hardened CFLAGS.
       http://wiki.debian.org/ReleaseGoals/SecurityHardeningBuildFlags
 
- -- Jari Aalto <jari.aalto@cante.net>  Wed, 15 Feb 2012 08:04:22 -0500
+ -- Jari Aalto <jari.aalto@cante.net>  Thu, 23 Feb 2012 10:47:10 -0500
 
 wmitime (0.3-9) unstable; urgency=low
 
