@@ -14,7 +14,7 @@ include debian/debian-vars.mk
 man:
 	$(MAKE) -C debian -f pod2man.mk PACKAGE=$(PACKAGE) makeman
 
-override_dh_auto_build:
+override_dh_auto_build: man
 	$(MAKE) $(MAKE_FLAGS) FLAGS="$(CFLAGS) $(LDFLAGS)"
 
 override_dh_auto_clean:
