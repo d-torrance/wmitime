@@ -1,29 +1,29 @@
 wmitime (0.3-10) unstable; urgency=low
 
+  * Move to packaging format 3.0 quilt.
   * debian/compat
     - Update to 9
   * debian/control
-    - (Build-Depends): update to debhelper 9, dpkg-dev 1.16.1. Remove
-      dpatch.
-    - (Standards-Version): Update to 3.9.2.
+    - (Build-Depends): update to debhelper 9, Remove dpatch.
+    - (Standards-Version): Update to 3.9.3.1.
   * debian/copyright
-    - Update to DEP5.
+    - Update to format 1.0.
   * debian/*.1
-    - Delete generated file.
+    - Delete, Was a generated file.
   * debian/*.1x.pod
-    - Rename file. Put manual into plain *.1 section.
+    - Rename to plain *.1 section.
   * debian/clean
     - New file.
   * debian/*.desktop
-    - Rename to plain desktop.
+    - Rename to plain debian/desktop.
   * debian/manpages
     - New file.
   * debian/rules
     - Remove unused targets.
-    - Use hardened CFLAGS.
+    - Use hardened build flags.
       http://wiki.debian.org/ReleaseGoals/SecurityHardeningBuildFlags
 
- -- Jari Aalto <jari.aalto@cante.net>  Thu, 23 Feb 2012 10:52:27 -0500
+ -- Jari Aalto <jari.aalto@cante.net>  Fri, 09 Mar 2012 09:03:02 -0500
 
 wmitime (0.3-9) unstable; urgency=low
 
