@@ -4,10 +4,9 @@ PACKAGE	  = wmitime
 BIN	  = $(PACKAGE)/$(PACKAGE)
 MAKE_FLAGS = -C wmitime
 
-include /usr/share/dpkg/buildflags.mk
+export DEB_BUILD_MAINT_OPTIONS	= hardening=+all
 CFLAGS	+= -Wall -pedantic
 LDFLAGS += -Wl,--as-needed
-export CFLAGS LDFLAGS
 
 include debian/debian-vars.mk
 
