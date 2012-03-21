@@ -1,1 +1,2 @@
-wmitime/wmitime /usr/bin/
+wmitime/wmitime /usr/bin
+debian/*.desktop usr/share/applications
