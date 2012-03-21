@@ -4,6 +4,7 @@ wmitime (0.3-10) unstable; urgency=low
   * debian/compat
     - Update to 9
   * debian/control
+    - (Homepage): Update location.
     - (Build-Depends): update to debhelper 9, Remove dpatch.
     - (Standards-Version): Update to 3.9.3.1.
   * debian/copyright
@@ -21,11 +22,11 @@ wmitime (0.3-10) unstable; urgency=low
   * debian/manpages
     - New file.
   * debian/rules
-    - Remove unused targets.
+    - Clean up and remove unused targets.
     - Use hardened build flags.
       http://wiki.debian.org/ReleaseGoals/SecurityHardeningBuildFlags
 
- -- Jari Aalto <jari.aalto@cante.net>  Wed, 21 Mar 2012 05:13:20 -0400
+ -- Jari Aalto <jari.aalto@cante.net>  Wed, 21 Mar 2012 05:17:51 -0400
 
 wmitime (0.3-9) unstable; urgency=low
 
