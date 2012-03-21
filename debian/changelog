@@ -8,6 +8,8 @@ wmitime (0.3-10) unstable; urgency=low
     - (Standards-Version): Update to 3.9.3.1.
   * debian/copyright
     - Update to format 1.0.
+  * debian-vars.mk
+    - Delete. No longer needed.
   * debian/*.1
     - Delete, Was a generated file.
   * debian/*.1x.pod
@@ -23,7 +25,7 @@ wmitime (0.3-10) unstable; urgency=low
     - Use hardened build flags.
       http://wiki.debian.org/ReleaseGoals/SecurityHardeningBuildFlags
 
- -- Jari Aalto <jari.aalto@cante.net>  Fri, 09 Mar 2012 09:03:02 -0500
+ -- Jari Aalto <jari.aalto@cante.net>  Wed, 21 Mar 2012 05:13:20 -0400
 
 wmitime (0.3-9) unstable; urgency=low
 
