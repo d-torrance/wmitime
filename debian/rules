@@ -1,14 +1,11 @@
 #!/usr/bin/make -f
 
-PACKAGE	  = wmitime
-BIN	  = $(PACKAGE)/$(PACKAGE)
+PACKAGE	   = wmitime
 MAKE_FLAGS = -C wmitime
 
 export DEB_BUILD_MAINT_OPTIONS	= hardening=+all
-CFLAGS	+= -Wall -pedantic
+CFLAGS	+= -Wall -pedantic $(CPPFLAGS)
 LDFLAGS += -Wl,--as-needed
-
-include debian/debian-vars.mk
 
 man:
 	$(MAKE) -C debian -f pod2man.mk PACKAGE=$(PACKAGE) makeman
@@ -18,11 +15,6 @@ override_dh_auto_build: man
 
 override_dh_auto_clean:
 	$(MAKE) $(MAKE_FLAGS) clean
-
-override_dh_auto_install:
-	install -D -m 755  $(BIN) $(BINDIR)/$(PACKAGE)
-	$(INSTALL_DIR) $(DESKTOPDIR)
-	$(INSTALL_DATA) debian/*.desktop $(DESKTOPDIR)
 
 %:
 	dh $@
