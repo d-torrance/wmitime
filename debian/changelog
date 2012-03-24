@@ -1,3 +1,10 @@
+wmitime (0.3-11) unstable; urgency=low
+
+  * debian/rules
+    - Use DEB_*_MAINT_* variables and use CPPFLAGS (more hardening).
+
+ -- Jari Aalto <jari.aalto@cante.net>  Sat, 24 Mar 2012 02:37:54 -0400
+
 wmitime (0.3-10) unstable; urgency=low
 
   * Move to packaging format 3.0 quilt.
