@@ -1,3 +1,9 @@
+wmitime (0.3-12) UNRELEASED; urgency=medium
+
+  * Fix Vcs-* URL in debian/control.
+
+ -- Mario Lang <mlang@debian.org>  Fri, 21 Feb 2014 11:45:07 +0100
+
 wmitime (0.3-11) unstable; urgency=low
 
   * debian/rules
