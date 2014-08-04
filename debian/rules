@@ -1,13 +1,7 @@
 #!/usr/bin/make -f
 
-export DEB_BUILD_MAINT_OPTIONS	= hardening=+all
-export DEB_CFLAGS_MAINT_APPEND	= -Wall -pedantic
-export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
-
-override_dh_auto_build:
-	$(MAKE) FLAGS="$(CFLAGS) $(CPPFLAGS) $(LDFLAGS)"
-
 %:
 	dh $@ --sourcedirectory=wmitime
 
-# End of file
+override_dh_auto_build:
+	dh_auto_build -- FLAGS="$(CFLAGS) $(CPPFLAGS) $(LDFLAGS)"
