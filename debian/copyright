@@ -1,10 +1,7 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0
 Upstream-Name: wmitime
-Upstream-Contact: None
-Source: None
-X-Comment:
- Dead upstream.
- 2006-02-14 sources no longer at <http://www.neotokyo.org/illusion/>.
+Upstream-Contact: Window Maker Developers Team <wmaker-dev@lists.windowmaker.org>
+Source: http://repo.or.cz/w/dockapps.git
 
 Files: *
 Copyright:
@@ -19,7 +16,8 @@ License: GPL-2+
 
 Files: debian/*
 Copyright:
-  2006-2012 Jari Aalto <jari.aalto@cante.net>
+  2014       Doug Torrance <dtorrance@monmouthcollege.edu>
+  2006-2012  Jari Aalto <jari.aalto@cante.net>
   2006       Marc 'HE' Brockschmidt <he@debian.org>
   2001       Lenart Janos <ocsi@debian.org>
   2001       Matej Vela <vela@debian.org>
