@@ -1,18 +1,20 @@
 Description: Patch Makefile to use DESTDIR during make install.
  The upstream Makefile would always install the wmitime binary in
  /usr/local/bin, which causes an error while building the package.
+ Also create $(DESTDIR)/usr/bin to avoid needing a debian/dirs file.
 Author: Doug Torrance <dtorrance@monmouthcollege.edu>
 Last-Update: 2014-08-04
 
 --- a/wmitime/Makefile
 +++ b/wmitime/Makefile
-@@ -24,9 +24,9 @@
+@@ -24,9 +24,10 @@
  	rm -f *~
  
  install:: wmitime
 -	cp -f wmitime /usr/local/bin/
 -	chmod 755 /usr/local/bin/wmitime
 -	chown root:root /usr/local/bin/wmitime
++	mkdir -p $(DESTDIR)/usr/bin
 +	cp -f wmitime $(DESTDIR)/usr/bin
 +	chmod 755 $(DESTDIR)/usr/bin/wmitime
 +	chown root:root $(DESTDIR)/usr/bin/wmitime
