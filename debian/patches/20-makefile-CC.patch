@@ -1,6 +1,6 @@
-From: Jari Aalto <jari.aalto@cante.net>
-Subject: Use CC variable
-
+Author: Jari Aalto <jari.aalto@cante.net>
+Description: Use CC variable
+ .
  wmitime/Makefile |    6 +++---
  1 file changed, 3 insertions(+), 3 deletions(-)
 

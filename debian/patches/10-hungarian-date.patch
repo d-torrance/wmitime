@@ -1,5 +1,5 @@
-From: Jari Aalto <jari.aalto@cante.net>
-Subject: Add hungarian support
+Author: Jari Aalto <jari.aalto@cante.net>
+Description: Add hungarian support
 
 Index: wmitime/wmitime/hungarian.h
 ===================================================================
