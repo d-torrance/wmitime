@@ -1,8 +1,36 @@
 wmitime (0.3-12) UNRELEASED; urgency=medium
 
-  * Fix Vcs-* URL in debian/control.
+  * New maintainer (Closes: #714747).
+  * Include manpage rather than creating during build.
+    - Remove debian/*pod*.
+    - Add debian/wmtime.1.
+    - Remove man target from debian/rules.
+  * debian/control
+    - Bump Standards-Version to 3.9.5; no changes required.
+    - Update Homepage and Vcs-* fields.
+  * debian/copyright
+    - Update Upstream-* and Source fields.
+    - Remove deprecated X-Comment field.
+  * debian/install
+    - Remove installation of /usr/bin/wmitime; now installed by dh_auto_install.
+  * debian/patches/*0-*.patch
+    - Update keywords.
+  * debian/patches/allow_display_with_no_args.patch
+    - Print warning when user runs wmitime -display without an argument instead
+      of segfaulting (Closes: #716466).
+  * debian/patches/make-install.patch
+    - Use DESTDIR when running make install.
+    - Create installation directory.
+  * debian/rules:
+    - Use --sourcedirectory option instead of using overrides to pass -C to
+      specify source directory.
+    - Remove unnecessary variables.
+    - Update override_dh_auto_build to use dh_auto_build instead of MAKE.
+  * debian/wmitime.desktop
+    - Fill in Generic and Comment fields.
+    - Add Keywords field.
 
- -- Mario Lang <mlang@debian.org>  Fri, 21 Feb 2014 11:45:07 +0100
+ -- Doug Torrance <dtorrance@monmouthcollege.edu>  Mon, 04 Aug 2014 10:57:35 -0500
 
 wmitime (0.3-11) unstable; urgency=low
 
