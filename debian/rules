@@ -1,16 +1,12 @@
 #!/usr/bin/make -f
 
-PACKAGE	   = wmitime
 MAKE_FLAGS = -C wmitime
 
 export DEB_BUILD_MAINT_OPTIONS	= hardening=+all
 export DEB_CFLAGS_MAINT_APPEND	= -Wall -pedantic
 export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
 
-man:
-	$(MAKE) -C debian -f pod2man.mk PACKAGE=$(PACKAGE) makeman
-
-override_dh_auto_build: man
+override_dh_auto_build:
 	$(MAKE) $(MAKE_FLAGS) FLAGS="$(CFLAGS) $(CPPFLAGS) $(LDFLAGS)"
 
 override_dh_auto_clean:
@@ -18,7 +14,5 @@ override_dh_auto_clean:
 
 %:
 	dh $@
-
-.PHONY: man
 
 # End of file
