@@ -3,10 +3,10 @@ Section: x11
 Priority: optional
 Maintainer: Doug Torrance <dtorrance@monmouthcollege.edu>
 Build-Depends: debhelper (>= 9), libx11-dev, libxext-dev, libxpm-dev
-Vcs-Git: git://anonscm.debian.org/collab-maint/wmitime.git
 Standards-Version: 3.9.5
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/wmitime.git;a=summary
-Homepage: http://www.freshports.org/x11-clocks/wmitime
+Homepage: http://repo.or.cz/w/dockapps.git
+Vcs-Browser: https://github.com/d-torrance/wmitime
+Vcs-Git: https://github.com/d-torrance/wmitime.git
 
 Package: wmitime
 Architecture: any
