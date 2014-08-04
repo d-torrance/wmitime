@@ -1,3 +1,4 @@
 10-hungarian-date.patch
 20-makefile-CC.patch
 make-install.patch
+allow_display_with_no_args.patch
