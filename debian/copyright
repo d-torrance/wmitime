@@ -1,7 +1,7 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0
 Upstream-Name: wmitime
 Upstream-Contact: Window Maker Developers Team <wmaker-dev@lists.windowmaker.org>
-Source: http://repo.or.cz/w/dockapps.git
+Source: http://windowmaker.org/dockapps/?name=wmitime
 
 Files: *
 Copyright:
