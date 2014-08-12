@@ -1,5 +1,6 @@
-wmitime (0.3-12) UNRELEASED; urgency=medium
+wmitime (0.3+20120605-1) unstable; urgency=medium
 
+  * New upstream version.
   * New maintainer (Closes: #714747).
   * Include manpage rather than creating during build.
     - Remove debian/*pod*.
@@ -30,7 +31,7 @@ wmitime (0.3-12) UNRELEASED; urgency=medium
     - Fill in Generic and Comment fields.
     - Add Keywords field.
 
- -- Doug Torrance <dtorrance@monmouthcollege.edu>  Mon, 04 Aug 2014 10:57:35 -0500
+ -- Doug Torrance <dtorrance@monmouthcollege.edu>  Tue, 12 Aug 2014 01:27:57 -0500
 
 wmitime (0.3-11) unstable; urgency=low
 
@@ -53,7 +54,7 @@ wmitime (0.3-10) unstable; urgency=low
   * debian-vars.mk
     - Delete. No longer needed.
   * debian/*.1
-    - Delete, Was a generated file.
+    - Delete, was a generated file.
   * debian/*.1x.pod
     - Rename to plain *.1 section.
   * debian/clean
@@ -100,28 +101,28 @@ wmitime (0.3-9) unstable; urgency=low
 
 wmitime (0.3-8) unstable; urgency=low
 
-  * debian/compat:
-    - Change from 5 to 7.x
-  * debian/control:
+  * debian/compat
+    - Change from 5 to 7.x.
+  * debian/control
     - (Build-Depends): debhelper >= 7.
     - (Description): Fix spelling.
     - (Homepage): New field.
     - (Standards-Version): Update to 3.8.0.
-  * debian/copyright:
+  * debian/copyright
     - Update to use ISO dates.
     - Minor layout fixes: add word "Copyright (C)..." etc.
     - Adjust Dave Clark's copyright years according to original README.
-  * debian/patches/10_hungarian-date.dpatch:
+  * debian/patches/10_hungarian-date.dpatch
     - (DP): Add documentation string.
-  * debian/rules:
+  * debian/rules
     - (build-stamp): Add MAKE_FLAGS.
     - (binary-arch): Add dh_desktop.
     - (install): Install *.desktop file. Do not install almost empty
       BUGS file. Do not install README, which has nothing additional
       information to manual page.
-  * debian/watch:
+  * debian/watch
     - New file.
-  * debian/wmitime.dektop:
+  * debian/wmitime.desktop
     - New file.
 
  -- Jari Aalto <jari.aalto@cante.net>  Mon, 27 Oct 2008 19:28:15 +0300
@@ -130,37 +131,37 @@ wmitime (0.3-7) unstable; urgency=low
 
   [ Jari Aalto ]
   * New maintainer. (Closes: #349245).
-  * debian/changelog:
+  * debian/changelog
     - Remove obsolete Emacs variables from the end.
-  * debian/compat:
+  * debian/compat
     - Bump version to 5
-  * debian/control:
+  * debian/control
     - (Description): Remove references to Window maker. Utility works
       with any WM.
-    - (Standards-Version): Update to 3.7.3
-    - (Build-Depends): Add dpatch
-  * debian/copyright:
-    - Add note that upstrean URL is dead.
+    - (Standards-Version): Update to 3.7.3.
+    - (Build-Depends): Add dpatch.
+  * debian/copyright
+    - Add note that upstream URL is dead.
     - Update Debian packaging copyrights to include all packagers.
-  * debian/menu:
+  * debian/menu
     - Correct section to Applications/Network/Communication
-  * debian/patches/10_hungarian-date.dpatch:
+  * debian/patches/10_hungarian-date.dpatch
     - Remove old hungarian diff and converted it into dpatch format
-  * debian/patches/20_makefile-CC.dpatch:
+  * debian/patches/20_makefile-CC.dpatch
     - Change hard coded 'cc' to $(CC). Eliminate unnecessary -D$(LANG).
-  * debian/rules:
+  * debian/rules
     - Remove and newly generated with dh_make.
     - Add rule to convert *.pod pages to *.1x
-  * debian/wmitime.1x.pod:
+  * debian/wmitime.1x.pod
     - New file. The old manual page was converted to POD format.
 
   [ Ricardo Mones ]
   * debian/control, debian/debian-vars.mk
-    - Fix typos
+    - Fix typos.
   * debian/copyright
-    - Fix packaging copyright years, LGPL license filename, typo
+    - Fix packaging copyright years, LGPL license filename, typo.
   * debian/rules
-    - (man): Fix rule by changing spaces into tabs
+    - (man): Fix rule by changing spaces into tabs.
 
  -- Jari Aalto <jari.aalto@cante.net>  Mon, 04 Feb 2008 17:18:39 +0000
 
@@ -169,67 +170,69 @@ wmitime (0.3-6) unstable; urgency=low
   * QA upload.
   * Maintainer asked to orphan the package in
     http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=347120;msg=7.
-  * debian/control: Replace xlibs-dev build-dep. (Closes: #347120)
-  * Rebuilt to allow prelinking. (Closes: #236804)
-
+  * debian/control
+    - Replace xlibs-dev build-dep (Closes: #347120).
+  * Rebuilt to allow prelinking (Closes: #236804).
   * Housekeeping:
-    + Use debhelper 5
-    + Quote everything in menu file
-    + Move manpage to 1x section
-    + Fix copyright file to shut up lintian
-    + Bumped Standards-Version to 3.6.2
+    + Use debhelper 5.
+    + Quote everything in menu file.
+    + Move manpage to 1x section.
+    + Fix copyright file to shut up lintian.
+    + Bump Standards-Version to 3.6.2.
 
  -- Marc 'HE' Brockschmidt <he@debian.org>  Fri, 20 Jan 2006 00:21:39 +0100
 
 wmitime (0.3-5) unstable; urgency=low
 
-  * Upgraded Standards-Version.
-  * Converted to use debhelper v3.
-  * Changed version numbering.
+  * Upgrade Standards-Version.
+  * Convert to use debhelper v3.
+  * Change version numbering.
 
  -- Lenart Janos <ocsi@debian.org>  Sat, 31 Mar 2001 18:48:31 +0200
 
 wmitime (0.3-4.2) unstable; urgency=low
 
-  * I've wrote a manpage.
-  * Removed dh_testversion from debian/rules.
+  * Add manpage.
+  * Remove dh_testversion from debian/rules.
 
  -- Lenart Janos <ocsi@debian.org>  Wed, 28 Mar 2001 22:57:18 +0200
 
 wmitime (0.3-4.1) unstable; urgency=medium
 
-  * Moved from /usr/X11R6/bin to /usr/bin.
+  * Move from /usr/X11R6/bin to /usr/bin.
 
  -- Lenart Janos <ocsi@debian.org>  Sat, 24 Feb 2001 17:31:21 +0100
 
 wmitime (0.3-4) unstable; urgency=low
 
-  * New maintainter. (closes: Bug#74647)
-  * Smaller bugs fixed in debian/rules.
-  * Added Hungarian support, but must recompile to use it.
+  * New maintainter (Closes: #74647).
+  * Fix smaller bugs in debian/rules.
+  * Add Hungarian support, but must recompile to use it.
 
  -- Lenart Janos <ocsi@debian.org>  Thu, 25 Jan 2001 14:24:30 +0100
 
 wmitime (0.3-3) unstable; urgency=low
 
-  * Removed dh_make examples.                        (closes: Bug#81534)
+  * Remove dh_make examples (Closes: #81534).
   * Conforms to Standards version 3.2.1:
-    + debian/control: Added build dependancies.
-    + debian/rules:
-      + Added support for the `debug' build option.
+    + debian/control
+      + Add build dependencies.
+    + debian/rules
+      + Add support for the `debug' build option.
       + Install into /usr rather than /usr/X11R6.
 
  -- Matej Vela <vela@debian.org>  Wed, 10 Jan 2001 23:37:42 +0100
 
 wmitime (0.3-2.1) unstable; urgency=low
 
-  * Maintainer: Debian QA Group <debian-qa@lists.debian.org>
+  * Set maintainer to Debian QA Group <debian-qa@lists.debian.org>.
 
  -- Takuo KITAME <kitame@northeye.org>  Thu, 31 Aug 2000 11:38:53 +0900
 
 wmitime (0.3-2) unstable; urgency=low
 
-  * debian/menu: Added hints="Clocks".               (closes: Bug#52006)
+  * debian/menu
+    - Add hints="Clocks" (Closes: #52006).
 
  -- Takuo KITAME <kitame@northeye.org>  Thu, 13 Jan 2000 10:17:50 +0900
 
