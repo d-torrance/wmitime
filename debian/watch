@@ -1,2 +1,2 @@
 version=3
-http://dockapps.org/file.php/id/22  .*wmitime-([\d.]+).tar.gz
+http://www.windowmaker.org/dockapps/?name=wmitime \?download=wmitime-(.+).tar.gz
