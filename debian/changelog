@@ -2,7 +2,7 @@ wmitime (0.3+20120605-1) unstable; urgency=medium
 
   * New upstream version.
   * New maintainer (Closes: #714747).
-  * Include manpage rather than creating during build.
+  * Include manpage rather than creating during build
     - Remove debian/*pod*.
     - Add debian/wmtime.1.
     - Remove man target from debian/rules.
@@ -44,10 +44,10 @@ wmitime (0.3-10) unstable; urgency=low
 
   * Move to packaging format 3.0 quilt.
   * debian/compat
-    - Update to 9
+    - Update to 9.
   * debian/control
     - (Homepage): Update location.
-    - (Build-Depends): update to debhelper 9, Remove dpatch.
+    - (Build-Depends): update to debhelper 9, remove dpatch.
     - (Standards-Version): Update to 3.9.3.1.
   * debian/copyright
     - Update to format 1.0.
@@ -65,7 +65,7 @@ wmitime (0.3-10) unstable; urgency=low
     - New file.
   * debian/rules
     - Clean up and remove unused targets.
-    - Use hardened build flags.
+    - Use hardened build flags. See:
       http://wiki.debian.org/ReleaseGoals/SecurityHardeningBuildFlags
 
  -- Jari Aalto <jari.aalto@cante.net>  Wed, 21 Mar 2012 05:17:51 -0400
@@ -134,7 +134,7 @@ wmitime (0.3-7) unstable; urgency=low
   * debian/changelog
     - Remove obsolete Emacs variables from the end.
   * debian/compat
-    - Bump version to 5
+    - Bump version to 5.
   * debian/control
     - (Description): Remove references to Window maker. Utility works
       with any WM.
@@ -144,14 +144,14 @@ wmitime (0.3-7) unstable; urgency=low
     - Add note that upstream URL is dead.
     - Update Debian packaging copyrights to include all packagers.
   * debian/menu
-    - Correct section to Applications/Network/Communication
+    - Correct section to Applications/Network/Communication.
   * debian/patches/10_hungarian-date.dpatch
-    - Remove old hungarian diff and converted it into dpatch format
+    - Remove old hungarian diff and converted it into dpatch format.
   * debian/patches/20_makefile-CC.dpatch
     - Change hard coded 'cc' to $(CC). Eliminate unnecessary -D$(LANG).
   * debian/rules
     - Remove and newly generated with dh_make.
-    - Add rule to convert *.pod pages to *.1x
+    - Add rule to convert *.pod pages to *.1x.
   * debian/wmitime.1x.pod
     - New file. The old manual page was converted to POD format.
 
@@ -185,7 +185,7 @@ wmitime (0.3-6) unstable; urgency=low
 wmitime (0.3-5) unstable; urgency=low
 
   * Upgrade Standards-Version.
-  * Convert to use debhelper v3.
+  * Convert to use debhelper 3.
   * Change version numbering.
 
  -- Lenart Janos <ocsi@debian.org>  Sat, 31 Mar 2001 18:48:31 +0200
@@ -199,13 +199,13 @@ wmitime (0.3-4.2) unstable; urgency=low
 
 wmitime (0.3-4.1) unstable; urgency=medium
 
-  * Move from /usr/X11R6/bin to /usr/bin.
+  * Move wmitime binary from /usr/X11R6/bin to /usr/bin.
 
  -- Lenart Janos <ocsi@debian.org>  Sat, 24 Feb 2001 17:31:21 +0100
 
 wmitime (0.3-4) unstable; urgency=low
 
-  * New maintainter (Closes: #74647).
+  * New maintainer (Closes: #74647).
   * Fix smaller bugs in debian/rules.
   * Add Hungarian support, but must recompile to use it.
 
@@ -214,10 +214,10 @@ wmitime (0.3-4) unstable; urgency=low
 wmitime (0.3-3) unstable; urgency=low
 
   * Remove dh_make examples (Closes: #81534).
-  * Conforms to Standards version 3.2.1:
-    + debian/control
-      + Add build dependencies.
-    + debian/rules
+  * Conforms to Standards version 3.2.1
+    - debian/control
+      + Add debhelper and xlibs-dev to Build-Depends.
+    - debian/rules
       + Add support for the `debug' build option.
       + Install into /usr rather than /usr/X11R6.
 
@@ -238,6 +238,6 @@ wmitime (0.3-2) unstable; urgency=low
 
 wmitime (0.3-1) unstable; urgency=low
 
-  * Initial Release.
+  * Initial release.
 
  -- Takuo KITAME <kitame@northeye.org>  Sun, 31 Oct 1999 06:15:04 +0900
