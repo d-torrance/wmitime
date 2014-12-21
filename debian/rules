@@ -4,7 +4,7 @@
 	dh $@ --sourcedirectory=wmitime
 
 override_dh_auto_build:
-	dh_auto_build -- FLAGS="$(CFLAGS) $(CPPFLAGS) $(LDFLAGS)"
+	dh_auto_build -- CFLAGS="$(shell dpkg-buildflags --get CFLAGS)"
 
 get-orig-source:
 	uscan --verbose --force-download --no-symlink
