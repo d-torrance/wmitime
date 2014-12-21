@@ -1,3 +1,22 @@
+wmitime (0.4-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+  * debian/(install|wmitime.desktop)
+    - Remove files; desktop file added upstream.
+  * debian/(manpages|wmitime.1)
+    - Remove files; manpage added upstream.
+  * debian/patches
+    - Remove directory; patches applied upstream.
+  * debian/rules
+    - Add get-orig-source target.
+    - Update override_dh_auto_build target to pass CFLAGS to new upstream
+      Makefile.
+    - Add override_dh_auto_install target to pass PREFIX to new upstream
+      Makefile.
+    - Remove --sourcedirectory=wmitime.
+
+ -- Doug Torrance <dtorrance@monmouthcollege.edu>  Sat, 20 Dec 2014 21:26:49 -0600
+
 wmitime (0.3+20120605-1) unstable; urgency=medium
 
   * New upstream version.
