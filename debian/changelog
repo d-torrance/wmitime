@@ -1,6 +1,8 @@
-wmitime (0.4-1) UNRELEASED; urgency=medium
+wmitime (0.4-1) unstable; urgency=medium
 
   * New upstream release.
+  * debian/control
+    - Bump Standards-Version to 3.9.6; no changes required.
   * debian/(install|wmitime.desktop)
     - Remove files; desktop file added upstream.
   * debian/(manpages|wmitime.1)
@@ -15,7 +17,7 @@ wmitime (0.4-1) UNRELEASED; urgency=medium
       Makefile.
     - Remove --sourcedirectory=wmitime.
 
- -- Doug Torrance <dtorrance@monmouthcollege.edu>  Sat, 20 Dec 2014 21:26:49 -0600
+ -- Doug Torrance <dtorrance@monmouthcollege.edu>  Sun, 28 Dec 2014 08:15:10 -0600
 
 wmitime (0.3+20120605-1) unstable; urgency=medium
 
